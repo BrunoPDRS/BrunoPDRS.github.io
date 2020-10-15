@@ -1,0 +1,117 @@
+@keyframes right {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes down {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes scaling {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes scaling2 {
+  from {
+    transform: scale(1);
+    box-shadow: 0;
+  }
+
+  to {
+    transform: scale(1.1);
+    box-shadow: 0 0 100px #333;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.animate-right {
+  animation-name: right;
+  animation-duration: 400ms;
+  animation-fill-mode: backwards;
+}
+
+.animate-down {
+  animation-name: down;
+  animation-duration: 200ms;
+}
+
+.animate-appear {
+  animation-name: appear;
+  animation-duration: 300ms;
+  animation-fill-mode: backwards;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.scaling:hover {
+  animation-name: scaling;
+  animation-duration: .4s;
+}
+
+.scaling2:hover {
+  animation-name: scaling2;
+  animation-duration: .4s;
+}
+
+#landing aside {
+  animation-delay: 200ms;
+}
+
+main .box-info:first-child {
+  animation-delay: 500ms;
+}
+
+main .box-info:last-child {
+  animation-delay: 800ms;
+}

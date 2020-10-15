@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/landing.css">
     <link rel="stylesheet" href="css/about.css">
     <link
@@ -15,7 +16,7 @@
     <title>Bruno G Pedrosa</title>
   </head>
   <body>
-    <header>
+    <header class="animate-down">
       <h1>B<span style="color: #0bab64;">G</span>P</h1>
       <div class="navigation">
         <a href="#landing">Início</a> |
@@ -26,7 +27,7 @@
       </a>
     </header>
     <div id="landing">
-      <aside>
+      <aside class="animate-right">
         <div class="img-container">
           <img src="src/bruno.jpeg" alt="Bruno Pedrosa smiling" />
         </div>
@@ -41,7 +42,7 @@
         </ul>
       </aside>
       <main>
-        <div class="box-info">
+        <div class="box-info animate-appear">
           <h2>Breve descrição</h2>
           <div class="text-box">
             <p>Seja muito bem-vindo(a)!</p>
@@ -50,24 +51,24 @@
             <em>“Não existe ensino que se compare ao exemplo.”</em><span> -Badden Powell.</span>
           </div>
         </div>
-        <div class="box-info">
+        <div class="box-info animate-appear">
           <h2>Onde me encontrar</h2>
           <div class="big-icons">
-            <a href="https://www.linkedin.com/in/bruno-pedrosa-/" target="_blank">
+            <a href="https://www.linkedin.com/in/bruno-pedrosa-/" target="_blank" class="scaling">
               <img src="src/linkedin-logo-2013.svg" alt="linkedin" />
             </a>
-            <a href="https://github.com/BrunoPDRS" target="_blank">
+            <a href="https://github.com/BrunoPDRS" target="_blank" class="scaling">
               <img src="src/github-2.svg" alt="github" />
             </a>
-            <a href="https://www.instagram.com/the.pedrosa27/" target="_blank">
+            <a href="https://www.instagram.com/the.pedrosa27/" target="_blank" class="scaling">
               <img src="src/instagram-1.svg" alt="instagram" />
             </a>
           </div>
           <div class="small-icons">
-            <a href="https://www.hackerrank.com/bgpedrosas" target="_blank" class="small-icon">
+            <a href="https://www.hackerrank.com/bgpedrosas" target="_blank" class="small-icon scaling">
               <img src="src/hackerrank.svg" alt="hackerrank" />
             </a>
-            <a href="mailto:bgpedrosas@gmail.com" class="small-icon">
+            <a href="mailto:bgpedrosas@gmail.com" class="small-icon scaling">
               <img src="src/gmail-icon-2.svg" alt="Mail me" />
             </a>
           </div>
@@ -75,7 +76,59 @@
       </main>
     </div>
     <div id="sobre">
+      <div class="carousel">
+        <div class="img-back-container fade">
+          <img src="src/capa1.jpg" />
+        </div>
+        <div class="img-back-container fade">
+          <img src="src/capa2.jpg" />
+        </div>
+        <div class="img-back-container fade">
+          <img src="src/capa3.jpg" />
+        </div>
 
+      </div>
+      <div class="content-container">
+        <div class="content">
+          <div class="more-info scaling2">
+            <h2>Habilidades<br>Pessoais</h2>
+            <p><strong>Otimismo</strong></p>
+            <p>Criatividade</p>
+            <p>Animação</p>
+            <p>Sinceridade</p>
+            <p>Amigável</p>
+          </div>
+          <div class="more-info scaling2">
+            <h2>Tecnologias<br>Utilizadas</h2>
+            <p>ReactJS</p>
+            <p>React Native</p>
+            <p>NodeJS</p>
+            <p>Python</p>
+            <p>SQL</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="more-info scaling2">
+            <h2>Atividades <br>Freetime</h2>
+            <p>Trilha</p>
+            <p>Videogame</p>
+            <p>Cozinhar</p>
+            <p>Conversar</p>
+            <p>Acampar</p>
+          </div>
+          <div class="more-info scaling2">
+            <h2>Blogs <br>Youtube</h2>
+            <a href="https://blog.rocketseat.com.br/" target="_blank">> Rocketseat</a>
+            <a href="https://blog.betrybe.com/" target="_blank">> Trybe</a>
+            <a href="https://www.youtube.com/LucasMontano" target="_blank">> Lucas Montano</a>
+            <a href="https://www.youtube.com/codigofontetv" target="_blank">> CDFTV</a>
+            <a href="https://www.youtube.com/Adrenaline" target="_blank">> Adrenaline</a>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

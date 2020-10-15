@@ -83,6 +83,12 @@ main .box-info {
 .text-box {
   margin: .1rem .4rem .4rem .4rem;
   color: #105740;
+  height: 70%;
+  line-height: 1.2;
+  font-size: clamp(.85rem, 2vw, 1rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (min-width: 1023px) {
@@ -103,13 +109,13 @@ main .box-info {
     overflow: hidden;
   }
 
+  .box-info a:hover {
+    transform: scale(1.2);
+  }
+
   .text-box {
     height: 80%;
-    line-height: 1.5;
     font-size: clamp(1rem, 1.2rem, 1.6rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .small-icons {
