@@ -1,5 +1,5 @@
 aside {
-  background: linear-gradient(315deg,#3bb78f 0%, #0bab64 74%);
+  background: var(--light-green);
   color: #105740;
   padding: 0 .2rem;
   text-align: center;

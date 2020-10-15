@@ -10,16 +10,20 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  background-color: #fefefe;
+  background-color: var(--soft-blue);
 }
 
 header a img {
   width: 3rem;
 }
 
+header h1 {
+  color: var(--soft-grey-dark);
+}
+
 .navigation {
   font-size: 1.6rem;
-  color: #105740;
+  color: var(--soft-grey);
 }
 
 .navigation a {
@@ -27,7 +31,7 @@ header a img {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
-  color: #105740;
+  color: var(--soft-grey-dark);
 }
 
 .navigation a:first-child {

@@ -33,7 +33,7 @@
 }
 
 .more-info {
-  background: #c7e9d9;
+  background: var(--light-green);
   width: 45vw;
   height: 90%;
   margin: 0 .5rem;
@@ -43,9 +43,9 @@
 
 .more-info h2 {
   padding: 1rem;
-  background: #0bab64;
+  background: var(--soft-blue);
   text-align: center;
-  color: #0c4130;
+  color: #49536b;
 }
 
 .more-info:last-child {
