@@ -1,6 +1,8 @@
 aside {
   background: linear-gradient(315deg,#3bb78f 0%, #0bab64 74%);
   color: #105740;
+  padding: 0 .2rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,11 +17,25 @@ aside img {
 
 aside ul li {
   font-weight: 500;
+  margin: 0 0 .5rem 0;
 }
 
 .name {
+  margin: .4rem 0 1rem;
   font-weight: 700;
-  font-size: clamp(1.2rem, 1.6rem, 2.4rem);
+  font-size: 1.6rem;
   text-align: center;
   color: #0c4130;
+}
+
+@media (min-width: 1023px) {
+  .name {
+    font-size: clamp(1rem, 3vw, 2rem);
+  }
+
+  .some-info li {
+    font-size: clamp(1rem, 1vw, 2rem);
+    text-align: left;
+    line-height: clamp(.8rem, 2vw, 2rem);
+  }
 }

@@ -1,5 +1,8 @@
 :root {
   font: 62.5%;
+  --dusty-green: #82A67D;
+  --dusty-purple: #825F87;
+  --bright-green: #2DFE54;
 }
 
 * {
