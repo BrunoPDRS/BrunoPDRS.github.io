@@ -1,3 +1,5 @@
+// Sliding image function from stackoverflow: https://stackoverflow.com/questions/55423319/how-to-make-slideshow-last-long-before-moving-onto-next-slide-and-how-to-move-do
+
 var slideIndex = 0;
 showSlides();
 
