@@ -1,4 +1,6 @@
 aside {
+  width: 20vw;
+  height: 100%;
   background: var(--light-green);
   color: #105740;
   padding: 0 0.2rem;
@@ -26,16 +28,4 @@ aside ul li {
   font-size: 1.6rem;
   text-align: center;
   color: #0c4130;
-}
-
-@media (min-width: 1023px) {
-  .name {
-    font-size: clamp(1rem, 3vw, 2rem);
-  }
-
-  .some-info li {
-    font-size: clamp(1rem, 1vw, 2rem);
-    text-align: left;
-    line-height: clamp(0.8rem, 2vw, 2rem);
-  }
 }

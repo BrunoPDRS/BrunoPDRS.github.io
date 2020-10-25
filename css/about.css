@@ -2,22 +2,26 @@
   width: 100vw;
   height: 92vh;
   margin-top: 8vh;
-  display: grid;
-  grid-template-rows: 3;
+  display: flex;
+  flex-direction: column;
 }
 
 .img-back-container {
-  width: 100vw;
+  width: 768px;
   height: 100%;
   max-width: 614.39px;
   max-height: 280px;
+  margin-top: 1rem;
+  display: flex;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  display: none;
 }
 
 .img-back-container img {
   width: 100%;
-  height: 50vw;
+  height: 100%;
 }
 
 .carousel {
@@ -27,7 +31,7 @@
 
 .content {
   width: 100vw;
-  height: 30vh;
+  height: 20%;
   display: flex;
 }
 
@@ -68,52 +72,29 @@
 }
 
 .more-info:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 0 0 100px #333;
 }
 
-@media (min-width: 760px) {
-  #sobre {
-    width: 100vw;
-    height: 92vh;
-    margin-top: 8vh;
-    display: flex;
-    flex-direction: column;
-  }
+.content-container {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  margin-top: 1rem;
+  padding-right: 1rem;
+}
 
-  .img-back-container {
-    width: 768px;
-    margin-top: 1rem;
-    display: flex;
-    border-radius: 2rem;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
+.content {
+  display: flex;
+  width: 50%;
+  height: 90%;
+}
 
-  .img-back-container img {
-    width: 100%;
-    height: 100%;
-  }
+.more-info p {
+  line-height: 1.8;
+  font-size: clamp(1rem, 2vh, 2rem);
+}
 
-  .content-container {
-    display: flex;
-    width: 100vw;
-    height: 100%;
-    margin-top: 1rem;
-    padding-right: 1rem;
-  }
-
-  .content {
-    display: flex;
-    width: 50%;
-    height: 90%;
-  }
-
-  .more-info p,
-  .more-info a {
-    margin: 1rem;
-    line-height: 1.5;
-    font-size: clamp(1rem, 2vh, 2rem);
-  }
+.more-info a {
+  font-size: 1.5rem;
 }
