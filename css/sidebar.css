@@ -1,7 +1,7 @@
 aside {
   background: var(--light-green);
   color: #105740;
-  padding: 0 .2rem;
+  padding: 0 0.2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -17,11 +17,11 @@ aside img {
 
 aside ul li {
   font-weight: 500;
-  margin: 0 0 .5rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .name {
-  margin: .4rem 0 1rem;
+  margin: 0.4rem 0 1rem;
   font-weight: 700;
   font-size: 1.6rem;
   text-align: center;
@@ -36,6 +36,6 @@ aside ul li {
   .some-info li {
     font-size: clamp(1rem, 1vw, 2rem);
     text-align: left;
-    line-height: clamp(.8rem, 2vw, 2rem);
+    line-height: clamp(0.8rem, 2vw, 2rem);
   }
 }

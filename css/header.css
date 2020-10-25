@@ -26,30 +26,29 @@ header h1 {
 }
 
 .navigation {
-  font-size: 1.6rem;
+  font-size: clamp(1rem, 3vw, 2rem);
   color: var(--soft-grey);
 }
 
 .navigation a {
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 1.2rem;
   color: var(--soft-grey-dark);
+  font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
 .navigation a:first-child {
-  margin-right: 1.2rem;
+  margin-right: clamp(1rem, 1vw, 2rem);
 }
 
 .navigation a:last-child {
-  margin-left: 1.2rem;
+  margin-left: clamp(1rem, 1vw, 2rem);
 }
 
 /* Underline animation reference: https://paulund.co.uk/css-animation-link-underline*/
-a.middle
-{
-    position: relative;
+a.middle {
+  position: relative;
 }
 
 a.middle:before {

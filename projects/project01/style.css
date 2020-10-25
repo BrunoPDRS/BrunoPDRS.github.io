@@ -1,0 +1,224 @@
+/* GENERAL SETTINGS */
+:root {
+  font: 62.5%;
+
+  --light-green: rgb(178 , 217 , 188);
+
+  --dark-green: rgb(81 , 107 , 87);
+
+  --soft-blue: rgb(134 , 153 , 196);
+
+  --soft-blue-darker: rgb(72 , 83 , 109);
+
+  --soft-grey: rgb(92 , 101 , 100);
+
+  --soft-grey-dark: rgb(63 , 70 , 69);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito Sans, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(253 , 251 , 251);
+  width: 100vw;
+  color: var(--dark-green);
+  font-weight: 500;
+}
+
+main {
+  width: 95%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.content-container {
+  background-color: var(--light-green);
+  width: 100%;
+  height: 95%;
+  border-radius: 1rem;
+}
+
+#landing , #learn , #evolution {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 1rem;
+}
+
+#learn , #evolution {
+  padding-top: 5rem;
+}
+
+/* HEADER */
+#cabecalho {
+  position: fixed;
+  top: 0;
+  padding: 0 3rem;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--soft-blue);
+  color: var(--soft-blue-darker);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#cabecalho a {
+  position: relative;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--soft-blue-darker);
+  transition: 0.3s;
+}
+
+#cabecalho a:hover {
+  color: rgb(253 , 251 , 251);
+}
+
+/* Underline animation reference: https://paulund.co.uk/css-animation-link-underline */
+#cabecalho a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(253 , 251 , 251);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+#cabecalho a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* LANDING PAGE */
+table {
+  border-spacing: 0;
+  color: var(--soft-blue-darker);
+}
+
+th , td {
+  width: 10vw;
+  text-align: center;
+  height: 5vh;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+th {
+  font-weight: 700;
+}
+
+td + td , th + th {
+  border-left: 3px solid var(--soft-blue-darker);
+}
+
+#landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-top: 4rem;
+}
+
+#landing .content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#minha_foto {
+  width: 30vw;
+  border-radius: 100%;
+  padding: 3px;
+  background-color: var(--soft-blue-darker);
+}
+
+/* SKILLS PAGE */
+.learned-tolearn {
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul , ol {
+  display: inline-block;
+  margin: 0 10vw;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+ul h2 , ol h2 {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+li + li {
+  border-top: 2px solid var(--dark-green);
+}
+
+/* LEARNING PAGE */
+.lado-esquerdo {
+  float: left;
+  width: 50%;
+  margin: 2% 0 2% 2%;
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+
+.lado-esquerdo h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.lado-direito {
+  float: right;
+  width: 25%;
+  height: 70%;
+  margin: 2%;
+  line-height: 1.5;
+  background-color: var(--soft-grey-dark);
+  color: rgb(175 , 175 , 175);
+  padding: 1%;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.lado-direito em {
+  font-weight: 700;
+}
+
+.lado-esquerdo p , .lado-direito p {
+  text-align: left;
+}
+
+#evolution {
+  height: calc(100vh - 4rem);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  height: 3rem;
+  background-color: var(--soft-grey-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(175 , 175 , 175);
+}
