@@ -71,7 +71,7 @@ main {
   justify-content: space-between;
 }
 
-#cabecalho a {
+#cabecalho nav a {
   position: relative;
   margin: 0 1rem;
   text-decoration: none;
@@ -81,12 +81,12 @@ main {
   transition: 0.3s;
 }
 
-#cabecalho a:hover {
+#cabecalho nav a:hover {
   color: rgb(253 , 251 , 251);
 }
 
 /* Underline animation reference: https://paulund.co.uk/css-animation-link-underline */
-#cabecalho a:before {
+#cabecalho nav a:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -99,9 +99,34 @@ main {
   transition: all 0.3s ease-in-out;
 }
 
-#cabecalho a:hover:before {
+#cabecalho nav a:hover:before {
   visibility: visible;
   transform: scaleX(1);
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container h1 {
+  margin-left: 2rem;
+}
+
+.title-container a {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s;
+}
+
+.title-container a:hover {
+  background-color: var(--soft-blue-darker);
+  transform: scale(1.3);
 }
 
 /* LANDING PAGE */
