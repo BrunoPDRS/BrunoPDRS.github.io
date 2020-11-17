@@ -23,7 +23,7 @@ function handleScoreBoard(isCorrect) {
 
   if (isCorrect) {
     scoreElement.innerText = parseInt(score, 10) + 3;
-  } else if (score !== 0) {
+  } else if (score > 0) {
     scoreElement.innerText = parseInt(score, 10) - 1;
   }
 }
