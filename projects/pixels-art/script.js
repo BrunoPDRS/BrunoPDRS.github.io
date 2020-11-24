@@ -53,12 +53,15 @@ function generateBoard(size, board) {
 }
 
 function handleBigNumbers(size) {
+  const sizeInput = document.getElementById('board-size');
   let newSize = size;
   if (newSize < 5) {
     newSize = 5;
-  } else if (newSize > 50) {
-    newSize = 50;
+  } else if (newSize > 20) {
+    newSize = 20;
   }
+
+  sizeInput.value = newSize;
 
   return newSize;
 }
