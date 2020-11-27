@@ -153,6 +153,7 @@ footer span {
   border: 1px solid #356225;
   border-radius: 4px;
   color: white;
+  cursor: pointer;
   font-size: 20px;
   font-weight: 600;
   height: 40px;
