@@ -6,6 +6,7 @@ const About: React.FC = () => (
   <Container>
     <MainInfo>
       <h1>Main</h1>
+      <h3>Em construção...</h3>
     </MainInfo>
     <SecundaryInfo>
       <h1>Secundary</h1>
